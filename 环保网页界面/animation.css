@@ -1,0 +1,114 @@
+/* 树木呼吸动画 */
+@keyframes treeScale {
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 100px #8BC34A);
+  }
+}
+
+
+/* 设置内容从下往上动画进入 */
+@keyframes bottomIn {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* 主页主标题内容，第二页主标题，第三页卡片1，最后一页外链标签 */
+.main-text, .section-title, .crd-1, #footer .social {
+  animation: 1s bottomIn ease-out forwards;
+  /* 设置动画延迟开始的时间 */
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+/* 主页副标题内容, 第二页p1类，第三页卡片2，第四页p标签，最后一页备案号p */
+.sub-text, .p1, .crd-2, #contact p, .copyright {
+  animation: 1.2s bottomIn ease-out forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+/* 主页左侧按钮，第二页p2类，第三页卡片3，第四页表单框 */
+.hero-cta, .p2, .crd-3, textarea {
+  animation: 1.6s bottomIn ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+/* 主页图标导航，第二页按钮，第三页卡片4，第四页按钮 */
+.social, .section-btn, .crd-4, form button {
+  animation: 1.8s bottomIn ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+/* 第四页表单输入框in-1，in-2 */
+.in-1 {
+  animation: 1.1s bottomIn ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+.in-2 {
+  animation: 1.3s bottomIn ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+/* 设置从上往下动画进入 */
+@keyframes topIn {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* 导航栏 */
+nav {
+  animation: 1.2s topIn ease-out forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+
+/* 设置从右向左动画进入 */
+@keyframes rightIn {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* 右侧登录-注册按钮 */
+.head-cta {
+  animation: 1.2s rightIn ease-out forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+/* 树木图片 */
+.right {
+  animation: 1.6s rightIn ease-out forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+
+/* 设置从左向右动画进入 */
+@keyframes leftIn {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* logo */
+.head-logo {
+  animation: 1.2s leftIn ease-out forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}

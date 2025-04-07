@@ -1,0 +1,180 @@
+@media (max-width: 425px) {
+  /* 设置适应布局 */
+  .section-wrap {
+    /* 超出部分裁剪 */
+    overflow: hidden;
+    height: auto;
+    width: 90%;
+    padding: 20px;
+    margin: 50px 15px;
+  }
+  section {
+    height: auto;
+  }
+
+  /* 设置header的布局为垂直布局 */
+  header {
+    flex-direction: column;
+    /* 设置元素之间的间距为20px */
+    gap: 20px;
+  }
+  /* 导航栏也设置为垂直 */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* 登录-注册按钮设置居中 */
+  .header-cta-btn {
+    width: 300px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  /* 设置主页内容 */
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  /* 主标题 */
+  .main-text {
+    font-size: 4rem;
+    margin-top: 60px;
+  }
+  /* 副标题 */
+  .sub-text {
+    font-size: 1rem;
+  }
+  /* 按钮 */
+  .hero-cta-btn {
+    margin-bottom: 25px;
+  }
+  /* 图片 */
+  .right img {
+    margin-top: 50px;
+  }
+
+
+  /* About */
+  .section-btn {
+    margin-bottom: 100px;
+  }
+
+
+  /* project */
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .card {
+    margin: 10px 0;
+  }
+  #project .section-title {
+    margin-top: 50px;
+  }
+
+
+  /* Contact */
+  /* 布局设置 */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  /* 图片设置 */
+  #contact .right img {
+    width: 100%;
+    margin: 100px 10px 50px;
+  }
+  /* 按钮设置 */
+  form button {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  /* 设置适应布局 */
+  .section-wrap {
+    /* 默认值，超出部分仍然可见 */
+    overflow: visible;
+    margin: 50px auto;
+    height: auto;
+    width: 80%;
+    padding: 50px;
+  }
+  section {
+    height: auto;
+  }
+
+  /* 设置header的布局为垂直布局 */
+  header {
+    flex-direction: column;
+    /* 设置元素之间的间距为20px */
+    gap: 20px;
+  }
+  /* 导航栏也设置为垂直 */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* 登录-注册按钮设置居中 */
+  .header-cta-btn {
+    width: 600px;
+    height: 60px;
+    border-radius: 35px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  /* 设置主页内容 */
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  /* 主标题 */
+  .main-text {
+    font-size: 5rem;
+    margin-top: 60px;
+  }
+  /* 副标题 */
+  .sub-text {
+    font-size: 1.1rem;
+  }
+  /* 按钮 */
+  .hero-cta-btn {
+    margin-bottom: 25px;
+  }
+  /* 图片 */
+  .right img {
+    margin-top: 50px;
+  }
+
+
+  /* About */
+  .section-btn {
+    margin-bottom: 100px;
+  }
+
+
+  /* project */
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .card {
+    margin: 0;
+  }
+
+
+  /* Contact */
+  /* 布局设置 */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  /* 图片设置 */
+  #contact .right img {
+    width: 90%;
+    margin: 100px 10px 80px;
+  }
+  /* 按钮设置 */
+  form button {
+    margin-bottom: 50px;
+  }
+}
