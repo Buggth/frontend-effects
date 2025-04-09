@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
+  <title>Coffe Shop</title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fav-icon -->
+  <link rel="shortcut icon" href="images/fav-icon.png">
+  <!-- import-font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- ==mian============================== -->
+  <section id="main">
+
+    <!-- ==header============================== -->
+    <header>
+      <!-- **naving******************************* -->
+      <nav class="navigation">
+        <!-- menu-btn -->
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </label>
+
+        <!-- meau -->
+        <div class="side-menu">
+          <div class="menu-container">
+            <strong>Main Links</strong>
+            <!-- close-btn -->
+            <label for="menu-btn" class="close-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" wight="1rem" height="1rem" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12L5.293 6.707a1 1 0 0 1 0-1.414z" />
+              </svg>
+            </label>
+            <!-- menu-list -->
+            <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Recent</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- logo -->
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="logo">
+        </a>
+
+        <!-- nav-btns -->
+        <div class="nav-btns">
+          <!-- search -->
+          <a href="javascript:void(0);" class="nav-search">
+            <!-- href="javascript:void(0)"	点击不跳转、不刷新、不执行操作	更干净、无副作用 -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path fill="currentColor"
+                d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+            </svg>
+          </a>
+          <!-- user -->
+          <a href="javascript:void(0);" class="nav-user">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+            </svg>
+          </a>
+          <!-- cart -->
+          <a href="javascript:void(0);" class="nav-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+              <path fill="currentColor"
+                d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z" />
+            </svg>
+            <span>0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ==header============================== -->
+    <div class="main-content">
+      <!-- text -->
+      <div class="main-content-text">
+        <strong>Coffee</strong>
+        <h1>Enjoy<br /> Your Morning <br /> Coffee</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem eaque sapiente magnam illum</p>
+        <span>$14.50</span>
+        <a href="#">Add To Cart</a>
+      </div>
+      <!-- img -->
+      <div class="main-content-img">
+        <img src="images/model.png" alt="model">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ==search============================ -->
+  <div class="search-bar">
+    <!-- input -->
+    <from class="search-input">
+      <input type="text" name="search" placeholder="search For Product">
+      <!-- cancel-btn -->
+      <a href="javascript:void(0);" class="search-cancel">
+        <svg xmlns="http://www.w3.org/2000/svg" wight="2rem" height="2rem" viewBox="0 0 24 24">
+          <path
+            d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12L5.293 6.707a1 1 0 0 1 0-1.414z" />
+        </svg>
+      </a>
+    </from>
+  </div>
+
+
+  <!-- ==script============================ -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(e){
+      // DOMContentLoaded 是一个浏览器的内置事件，它会在 HTML 文档完全加载和解析完成之后 被触发，但不需要等待 CSS、图片和其他外部资源的加载完成。
+      // Search==============================//
+      document.addEventListener('click', function(e){
+        // closest() 方法的好处在于，它不仅仅检查点击的元素是否符合 .nav-search，还会检查该元素的祖先是否符合 .nav-search 类。
+        if(e.target.closest('.nav-search')){
+          document.querySelector('.search-bar').classList.add('search-bar-active')
+        }
+        else if(e.target.closest('.search-cancel')){
+          document.querySelector('.search-bar').classList.remove('search-bar-active')
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>
